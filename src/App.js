@@ -19,8 +19,9 @@ function App() {
   const [editando, setEditando] = useState(null);
  
   useEffect(() => {
-    if (token) cargarPersonas();
-  }, [token]);
+  if (token) cargarPersonas();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+}, [token]);
  
   const headers = {
     "Content-Type": "application/json",
