@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
  
-const API = "http://localhost:5277";
+const API = "https://personas-2.onrender.com";
  
 function App() {
   const [token, setToken] = useState(localStorage.getItem("token") || null);
